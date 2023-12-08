@@ -1,56 +1,11 @@
 import {Box, Heading, SimpleGrid } from '@chakra-ui/react';
 import ProjectCard from './ProjectCard';
+import logoipsum from '../assets/Images/logoipsum.png'
+import tvapple from '../assets/Images/tvapple.png'
+import old from '../assets/old.png'
+import { data } from './AllData';
 export default function Projects() {
-    const data = [
-        {
-            title: 'Name',
-            list: [
-                'Registration facility with an OTP email',
-                'Registration facility with an OTP email',
-                'Registration facility with an OTP email',
-                'Registration facility with an OTP email'
-            ],
-            scr: 'Image url',
-            tech: ['react', 'html', 'css', 'js', 'chakra']
-
-        },
-        {
-            title: 'Name',
-            list: [
-                'Registration facility with an OTP email',
-                'Registration facility with an OTP email',
-                'Registration facility with an OTP email',
-                'Registration facility with an OTP email'
-            ],
-            scr: 'Image url',
-            tech: ['react', 'html', 'css', 'js', 'chakra']
-
-        },
-        {
-            title: 'Name',
-            list: [
-                'Registration facility with an OTP email',
-                'Registration facility with an OTP email',
-                'Registration facility with an OTP email',
-                'Registration facility with an OTP email'
-            ],
-            scr: 'Image url',
-            tech: ['react', 'html', 'css', 'js', 'chakra']
-
-        },
-        {
-            title: 'Name',
-            list: [
-                'Registration facility with an OTP email',
-                'Registration facility with an OTP email',
-                'Registration facility with an OTP email',
-                'Registration facility with an OTP email'
-            ],
-            scr: 'Image url',
-            tech: ['react', 'html', 'css', 'js', 'chakra']
-
-        }
-    ]
+    
     return (
         <Box bg={'#f9f9f9'}>
 

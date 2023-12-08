@@ -12,6 +12,7 @@ import {
 
 
 import { FaGithub } from 'react-icons/fa'
+import resume from '../../public/shubham-chhimpa-resume.pdf';
 
 export default function Home() {
   return (
@@ -43,9 +44,9 @@ export default function Home() {
             <Stack spacing={{ base: 4, sm: 6 }} direction={{ base: 'row' }}>
               <Button
                 as={'a'}
-                href='https://shubham-chhimpa-here.github.io/shubham-resume-pdf.pdf'
+                href={resume}
                 target='_blank'
-                download={'shubham-resume-pdf.pdf'}
+                download={'shubham-chhimpa-resume'}
                 rounded={'full'}
                 size={'lg'}
                 fontWeight={'normal'}

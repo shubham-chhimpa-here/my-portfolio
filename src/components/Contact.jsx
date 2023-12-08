@@ -27,7 +27,7 @@ export default function Contact() {
                     </Box>
                     <VStack alignItems={{base:'center', md:'flex-start'}} gap={0} fontSize={'1.1rem'}>
                         <Text fontWeight={'bold'} >Mail</Text>
-                        <Text as={'a'}>Test@gmail.com</Text>
+                        <Text as={'a'} href="mailto:shubhamchhimpa2001@gmail.com">shubhamchhimpa2001@gmail.com</Text>
                     </VStack>
                 </Flex>
             </Flex>

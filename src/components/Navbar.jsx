@@ -20,6 +20,8 @@ import {
   ChevronRightIcon,
 } from '@chakra-ui/icons'
 
+import resume from '../../public/shubham-chhimpa-resume.pdf'
+
 
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure()
@@ -122,11 +124,12 @@ const DesktopNav = () => {
   )
 }
 
-const DesktopSubNav = ({ label, href, subLabel }) => {
+const DesktopSubNav = ({ label, href, subLabel, download }) => {
   return (
     <Box
       as="a"
       href={href}
+      download={download}
       role={'group'}
       display={'block'}
       p={2}
@@ -237,5 +240,10 @@ const NAV_ITEMS = [
   {
     label: 'Contact',
     href: '#contact',
+  },
+  {
+    label: 'Resume',
+    href: resume,
+    download: 'shubham-chhimpa-resume'
   },
 ]
