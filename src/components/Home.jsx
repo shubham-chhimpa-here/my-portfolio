@@ -9,6 +9,8 @@ import {
   Image,
 } from '@chakra-ui/react'
 
+import profile from '../assets/profile.jpg'
+
 
 
 import { FaGithub } from 'react-icons/fa'
@@ -44,6 +46,7 @@ export default function Home() {
             <Stack spacing={{ base: 4, sm: 6 }} direction={{ base: 'row' }}>
               <Button
                 as={'a'}
+              
                 href={resume}
                 target='_blank'
                 download={'shubham-chhimpa-resume'}
@@ -80,10 +83,11 @@ export default function Home() {
 
             <Box
               position={'relative'}
-              height={'300px'}
-              rounded={'2xl'}
+              // height={'300px'}
+              maxW={'400px'}
+              rounded={'full'}
               boxShadow={'2xl'}
-              width={'full'}
+              // width={'full'}
               overflow={'hidden'}>
               
               <Image
@@ -92,9 +96,7 @@ export default function Home() {
                 align={'center'}
                 w={'100%'}
                 h={'100%'}
-                src={
-                  'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                }
+                src={ profile }
               />
             </Box>
           </Flex>

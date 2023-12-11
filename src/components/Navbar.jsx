@@ -124,12 +124,13 @@ const DesktopNav = () => {
   )
 }
 
-const DesktopSubNav = ({ label, href, subLabel, download }) => {
+const DesktopSubNav = ({ label, href, subLabel, download, blank }) => {
   return (
     <Box
       as="a"
       href={href}
       download={download}
+      target={blank ? '_blank' : '_self'}
       role={'group'}
       display={'block'}
       p={2}
@@ -178,7 +179,7 @@ const MobileNavItem = ({ label, children, href }) => {
       <Box
         py={2}
         as="a"
-        href={href ?? '#'}
+        href={href}
         justifyContent="space-between"
         alignItems="center"
         _hover={{
@@ -244,6 +245,7 @@ const NAV_ITEMS = [
   {
     label: 'Resume',
     href: resume,
-    download: 'shubham-chhimpa-resume'
+    download: 'shubham-chhimpa-resume',
+    blank: true,
   },
 ]
